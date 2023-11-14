@@ -44,7 +44,7 @@ pipeline {
          stage('Push Image to Docker Hub') {
             steps {
                 script {
-                    sh 'docker login -u chamsebh -p ${DOCKERHUB_CREDENTIALS}'
+                    sh 'docker login -u chamsebh -p 25226726Cc'
                     sh 'docker push ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG}'
                     }
                 }
